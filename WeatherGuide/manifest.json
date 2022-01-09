@@ -1,0 +1,19 @@
+{
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "/animated/cloudy-day-1.svg",
+        "sizes": "256x256",
+        "type": "image/svg"
+      },
+      {
+        "src": "/animated/icon512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#ffd31d",
+    "background_color": "#000000d0",
+    "display": "standalone"
+  }

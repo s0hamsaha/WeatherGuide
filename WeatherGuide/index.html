@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#4dbaa8"/>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="/animated/icon128.png">
+    <title>WEATHER GUIDE</title>
+    <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker.register('sw.js');
+        };
+    </script>
+</head>
+
+<body>
+ <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Search By City..." class="searchbar">
+            <button type="submit" class="subbutton">
+                <img src="./animated/search-3-16.png">
+            </button>
+        </div>
+    <div class="weather">
+        <div class="location">
+            <h1 class="location-Timezone">Timezone</h1>
+            <img class="tempicon" src="./animated/weather-sprite.svg" alt="">
+        </div>
+        <div class="temperature">
+            <div class="degree">
+                <h2 class="temperature-deg">0</h2>
+                <span class="unit">°C</span>
+            </div>
+            <div class="temperature-des">Cold</div>
+        </div>
+    </div> 
+ </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
